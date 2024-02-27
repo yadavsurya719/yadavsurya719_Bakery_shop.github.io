@@ -1,0 +1,195 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9afaf;
+  background-image: url(./back.avif);
+  background-image: auto;
+}
+ 
+ 
+.header {
+  background-color: #045c6b;
+  color: #ffffff;
+  text-align: center;justify-content: center;
+  padding:5px;
+}
+ 
+.nav {
+  background-color: #61d9ee;
+  padding:10px;
+  text-align: center;
+
+}
+ 
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+a.active,a:hover{
+ background: #1b9bff;
+ transition: .5s;
+ padding: 5px;
+}
+ 
+.carousel {
+  width:90%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.carousel-inner {
+  display: flex;
+  width: 400%;
+  animation: carouselAnimation 38s infinite alternate;
+}
+ 
+.carousel-item {
+  width: 25%;
+  box-sizing: border-box;
+}
+ 
+.carousel-item img {
+  width: 90%;
+  border-radius: 50px;
+  height:450px;
+}
+ 
+@keyframes carouselAnimation {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  25%, 75% {
+      transform: translateX(-50%);
+  }
+  50% {
+      transform: translateX(-100%);
+  }
+}
+.services {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  }
+  .service-card {
+  background-color:lightseagreen;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align:center;
+  width: 300px;
+  }
+  .service-card img {
+  width: 250px;
+  height: 250px;
+  
+  margin-bottom: 15px;
+  }
+   
+  .service-card h3 {
+  margin: 10px 0;
+  }
+   
+  .service-card p {
+  color: #0c090c;
+  }
+  .map-container{
+    height:330px;
+    width:100%;
+    padding-bottom: 10%;
+    style=display;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position:relative;
+    display: flex;
+    top:0;left:0;right:1px;
+  }
+  .address{
+    justify-content: flex;
+    width:auto;
+    float:inline-end;
+    height: 430px;
+    width:490px;
+    border:1px solid black;
+    margin-right:5px;
+    padding:10px;
+    border-radius: 10px;
+  }
+  address p{
+    padding:10px;
+  }
+  .header img {
+    width: 55px;
+    height: 55px;
+  }
+  input{
+    background-color:rgb(241, 241, 241);
+    height:35px;
+    width:300px;
+    border-radius: 17px;
+    font-family:sans-serif;
+    padding:5px;
+    color:black;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin:10px;
+  }
+  ::placeholder{
+    color:grey;
+    padding:5px;
+    font-style:normal;
+  }
+  textarea{
+    color:white;
+    background-color:white;
+    border-radius: 17px;
+    height:52px;
+    width:620px;
+    font-family:sans-serif;
+    padding:5px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+   
+    margin:5px;
+  }
+  button{
+    background-color:orange;
+    height:40px;
+    width:150px;
+    color:white;
+    border-radius: 20px;
+    margin:10px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin:50px;
+  }
+  .contactus{
+    background-image: url("food.jpg");
+                  height:100vh;
+                  background-size: cover;
+  }
+  .bottom{
+    background-color: rgb(197, 129, 129);
+    border-radius: 10px;
+    padding:10px;
+   
+  }
+  .rsvp{
+    font-weight: bold;
+  }
